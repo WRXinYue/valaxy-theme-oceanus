@@ -19,7 +19,7 @@ const isIndex = computed(() => route.path.replace(/index.html$/, '') === '/')
   <!-- Note: The outer div ensures that sticky positioning works -->
   <div v-if="isIndex ? frontmatter.toc === true : frontmatter.toc !== false">
     <div class="sticky pt-[16px]" style="top: var(--oceanus-c-nav-height); width: var(--oceanus-c-aside-width);">
-      <h2 font="serif black">
+      <h2 font="black" class="microsoft-yahei">
         {{ t('sidebar.toc') }}
       </h2>
       <div class="custom-container">

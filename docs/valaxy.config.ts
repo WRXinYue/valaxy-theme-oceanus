@@ -8,6 +8,8 @@ export default defineConfig<ThemeConfig>({
     header: {
       favicon: false,
 
+      title: 'Apple Design Wiki',
+
       nav: [
         {
           text: '主页',
@@ -61,7 +63,7 @@ export default defineConfig<ThemeConfig>({
     },
 
     hero: {
-      title: 'Oceanus Docs',
+      title: 'Apple Design Wiki',
       motto: '简约、高雅的 Valaxy 文档主题',
       img: 'https://w.wallhaven.cc/full/85/wallhaven-85yl61.png',
     },

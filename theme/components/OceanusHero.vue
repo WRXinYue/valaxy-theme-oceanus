@@ -5,7 +5,7 @@ const themeConfig = useThemeConfig()
 </script>
 
 <template>
-  <div class="oceanus-hero" :style="{backgroundImage: `url(${themeConfig.hero.img})`}">
+  <div class="oceanus-hero" :style="{ backgroundImage: `url(${themeConfig.hero.img})` }">
     <div class="hero-content">
       <p class="hero-title">
         <slot name="intro-text">
@@ -21,8 +21,12 @@ const themeConfig = useThemeConfig()
 
       <!-- CTA Buttons -->
       <div class="hero-buttons">
-        <button class="cta-primary">Get Started</button>
-        <button class="cta-secondary">Learn More</button>
+        <button class="cta-primary">
+          Get Started
+        </button>
+        <button class="cta-secondary">
+          Learn More
+        </button>
       </div>
     </div>
   </div>
@@ -60,14 +64,17 @@ const themeConfig = useThemeConfig()
 
   .hero-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
+    // font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 600;
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
   }
 
   .hero-subtitle {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    font-weight: 400;
+    // font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    // font-weight: 400;
+    font-weight: 300;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.85);
   }
@@ -78,7 +85,8 @@ const themeConfig = useThemeConfig()
     gap: 1rem;
   }
 
-  .cta-primary, .cta-secondary {
+  .cta-primary,
+  .cta-secondary {
     padding: 0.75rem 2rem;
     border-radius: 24px;
     font-size: 1rem;
