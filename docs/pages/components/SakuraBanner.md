@@ -26,4 +26,4 @@ categories:
 
 ## 相关组件
 
-- [SakuraBannerCustom](/components-custom/SakuraBannerCustom)
+<!-- - [SakuraBannerCustom](/components-custom/SakuraBannerCustom) -->

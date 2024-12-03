@@ -20,5 +20,5 @@ categories:
 
 ## 主题组件
 
-- [SidebarThemeDynamic](/components-themes/SidebarThemeDynamic)
-- [SidebarThemeOverview](/components-themes/SidebarThemeOverview)
+<!-- - [SidebarThemeDynamic](/components-themes/SidebarThemeDynamic)
+- [SidebarThemeOverview](/components-themes/SidebarThemeOverview) -->

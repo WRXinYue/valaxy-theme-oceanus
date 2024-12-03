@@ -30,6 +30,6 @@ categories:
 
 ## 相关组件
 
-- [SakuraPageHeader](/components/SakuraPageHeader)
+<!-- - [SakuraPageHeader](/components/SakuraPageHeader)
 - [SakuraMultiColumnsLayout](/components-layout/SakuraMultiColumnsLayout)
-- [StarterAuthor](/components/StarterAuthor)
+- [StarterAuthor](/components/StarterAuthor) -->
