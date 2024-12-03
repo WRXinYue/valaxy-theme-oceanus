@@ -1,0 +1,21 @@
+/* reset scrollbar */
+::-webkit-scrollbar {
+  width: unset;
+  height: unset;
+}
+
+::-webkit-scrollbar-track {
+  background-color: unset;
+  border-radius: unset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: unset;
+  border-radius: unset;
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: unset;
+}

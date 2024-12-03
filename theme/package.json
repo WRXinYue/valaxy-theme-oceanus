@@ -1,0 +1,26 @@
+{
+  "name": "valaxy-theme-oceanus",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.11.0",
+  "author": "WRXinYue<https://github.com/wrxinyue>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WRXinYue/valaxy-theme-oceanus"
+  },
+  "keywords": [
+    "valaxy",
+    "theme",
+    "starter",
+    "vue"
+  ],
+  "main": "client/index.ts",
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "@iconify-json/tabler": "^1.1.120",
+    "primevue": "^4.0.7"
+  },
+  "devDependencies": {
+    "valaxy": "^0.20.0"
+  }
+}

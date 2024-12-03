@@ -1,0 +1,44 @@
+:root {
+  color-scheme: only light;
+}
+
+.link {
+  color: var(--oceanus-c-brand);
+}
+
+html {
+  color: var(--oceanus-c-text);
+}
+
+.oceanus-text {
+  color: var(--oceanus-c-text);
+}
+
+.oceanus-safe-padding {
+  // padding-left: max(40px, env(safe-area-inset-left));
+  // padding-right: max(40px, env(safe-area-inset-right));
+  padding-left: max(56px, env(safe-area-inset-left));
+  padding-right: max(56px, env(safe-area-inset-right));
+}
+
+.oceanus-container:not(.minimized-container) {
+  width: 100%;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1500px) {
+  .oceanus-container:not(.minimized-container) {
+    max-width: 1080px;
+  }
+}
+
+@media only screen and (min-width: 1251px) {
+  .oceanus-container:not(.minimized-container) {
+    max-width: 980px;
+  }
+}
