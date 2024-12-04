@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <StarterArticle>
+    <OceanusArticle>
       <RouterView />
-    </StarterArticle>
+    </OceanusArticle>
   </Layout>
 </template>
