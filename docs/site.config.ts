@@ -13,4 +13,8 @@ export default defineSiteConfig({
   comment: {
     enable: false,
   },
+
+  mediumZoom: {
+    enable: true,
+  },
 })

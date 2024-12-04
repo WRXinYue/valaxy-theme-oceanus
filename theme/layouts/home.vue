@@ -11,7 +11,7 @@ const posts = computed(() => (
 
 <template>
   <Layout>
-    <OceanusHero />
+    <!-- <OceanusHero /> -->
     <div class="post-list">
       <RouterLink v-for="(post, index) of posts" :key="index" :to="post.path || ''">
         <div class="post-card md:flex" flex="~ <md:col" :class="{ 'dark-mode': post.mode === 'dark' }">
@@ -60,8 +60,8 @@ const posts = computed(() => (
 
     .post-card-excerpt {
       color: inherit;
-      font-size: 16px;
-      font-weight: 510;
+      font-size: 14px;
+      font-weight: 400;
       line-height: 19.09px;
       margin-top: 10px;
     }
