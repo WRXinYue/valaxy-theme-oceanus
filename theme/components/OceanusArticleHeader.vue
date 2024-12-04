@@ -5,14 +5,16 @@ const frontmatter = useFrontmatter()
 </script>
 
 <template>
-  <header 
-    class="header-container relative flex flex-col justify-center text-center text-white" 
+  <header
+    class="header-container relative flex flex-col justify-center text-center text-white"
     :style="`background-image: url(${frontmatter.image || 'https://w.wallhaven.cc/full/jx/wallhaven-jxz67y.png'});`"
   >
-    <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/10"></div>
+    <div class="absolute inset-0 from-black/40 to-black/10 bg-gradient-to-b" />
 
     <div class="relative z-10 py-10 xl:py-16">
-      <h1 class="header-title">{{ frontmatter.title }}</h1>
+      <h1 class="header-title">
+        {{ frontmatter.title }}
+      </h1>
       <p class="header-date">
         <span>Updated:</span> <OceanDate class="inline-block" :date="frontmatter.date" />
       </p>

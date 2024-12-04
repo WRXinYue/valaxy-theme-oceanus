@@ -19,14 +19,17 @@ const prevPost = computed(() => posts.value[findCurrentIndex() + 1])
 
 <template>
   <div class="oceanus-article oceanus-safe-padding mx-auto min-w-0">
-    <aside style="border-left: 1px solid rgba(0, 0, 0, 0.04); border-right: 1px solid rgba(0, 0, 0, .1);">
+    <aside />
+
+    <!-- <aside style="border-left: 1px solid rgba(0, 0, 0, 0.04); border-right: 1px solid rgba(0, 0, 0, .1);">
       <slot name="sidebar">
         <OceanusSidebar :open="isOpen" />
       </slot>
-    </aside>
+    </aside> -->
+
     <div style="border-right: 1px solid rgba(0, 0, 0, 0.04);">
-      <article class="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-        <OceanusArticleHeader />
+      <article flex="~" class="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+        <!-- <OceanusArticleHeader /> -->
 
         <div
           class="pb-16 xl:grid xl:grid-cols-2 xl:gap-x-10 divide-y divide-gray-200 xl:pb-20 xl:divide-y-0 dark:divide-gray-700"

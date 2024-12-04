@@ -23,6 +23,12 @@ onMounted(() => {
 
 <template>
   <main flex="~" class="oceanus-valaxy-main">
+    <div>
+      <div class="pt-[16px]" style="top: var(--oceanus-c-nav-height); width: var(--oceanus-c-aside-width);">
+        <img :src="frontmatter.image || 'https://valaxy-theme-oceanus.vercel.app/assets/0311imac_20-zwr3Vp6a.png'">
+      </div>
+    </div>
+
     <div w="full" flex="~">
       <slot name="main">
         <div class="content" flex="~ col grow" w="full">

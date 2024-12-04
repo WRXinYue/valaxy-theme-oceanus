@@ -3,7 +3,7 @@ title: MacOSX1999
 subtitle: Mac OS X, 1999
 content: The iMac form was driven by its primary component, the 15��inch blown-glass cathode ray tube.
 cover: ["MacOSX 1999/title_image.jpg", "MacOSX 1999/title_mobile_image.jpg"]
-mode: dark
+# mode: dark
 ---
 
 ## Dock
