@@ -6,7 +6,7 @@ export default defineConfig<ThemeConfig>({
 
   themeConfig: {
     header: {
-      favicon: false,
+      favicon: 'favicon-black.svg',
 
       title: 'Apple Design Wiki',
 

@@ -14,7 +14,7 @@ const { favicon, nav, title } = themeConfig.value.header
 const currentNavItem = ref<NavItem>()
 const currentSubNav = ref<SubNarItem[]>()
 
-const NavFavicon = computed(() => favicon === true ? siteConfig.value.favicon : favicon)
+const navFavicon = computed(() => favicon === true ? siteConfig.value.favicon : favicon)
 const activeParentLink = computed(() => {
   const pathSegments = route.path.split('/').filter(Boolean)
   if (pathSegments.length > 1) {
@@ -50,6 +50,6 @@ watch(() => route.path, () => {
 
 <template>
   <OceanusNavToolbar />
-  <OceanusNav :nav="nav" :favicon="NavFavicon" :title :class="!currentSubNav && 'sticky'" />
+  <OceanusNav :nav="nav" :favicon="navFavicon" :title :class="!currentSubNav && 'sticky'" />
   <OceanusSubNav v-show="currentSubNav" :title="currentNavItem?.text" :sub-nav="currentSubNav" :class="currentSubNav && 'sticky'" />
 </template>

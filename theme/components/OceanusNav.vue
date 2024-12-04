@@ -13,7 +13,7 @@ defineProps<{
     <RouterLink to="/" :aria-label="title">
       <div class="h-30px flex text-center text-xl">
         <img v-if="favicon" class="mr-2 object-cover" alt="logo" :src="favicon">
-        <span class="oceanus-nav-title oceanus-text md:inline">{{ title }}</span>
+        <span class="oceanus-nav-title oceanus-text microsoft-yahei md:inline">{{ title }}</span>
       </div>
     </RouterLink>
 
@@ -53,10 +53,11 @@ defineProps<{
   // box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.135);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background: var(--oceanus-c-nav-bg);
-  // backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 
   &-title {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-size: 1em;
     line-height: inherit;
     font-weight: 700;
     text-align: center;
@@ -64,7 +65,6 @@ defineProps<{
     max-width: 100%;
 
     height: 100%;
-    font-family: 'Times New Roman', Times, serif;
   }
 
   .oceanus-link-text {
