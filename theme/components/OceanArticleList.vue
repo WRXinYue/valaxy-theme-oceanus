@@ -16,17 +16,13 @@ const posts = computed(() => props.posts || routes.value)
 </script>
 
 <template>
-  <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+  <div class="article-list">
     <template v-for="post in posts" :key="post.path">
       <Transition name="fade">
-        <li v-if="post" class="py-8">
-          <OceanArticleCardLayout :post="post" />
-        </li>
+        <RouterLink :to="post.path || ''">
+          <OceanArticleCard :post="post" />
+        </RouterLink>
       </Transition>
     </template>
-  </ul>
-
-  <div class="flex-center mx-auto w-40 border rounded-xl">
-    View More Post
   </div>
 </template>

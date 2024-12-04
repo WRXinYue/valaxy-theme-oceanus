@@ -12,24 +12,7 @@ const posts = computed(() => (
 <template>
   <Layout>
     <!-- <OceanusHero /> -->
-    <div class="post-list">
-      <RouterLink v-for="(post, index) of posts" :key="index" :to="post.path || ''">
-        <div class="post-card md:flex" flex="~ <md:col" :class="{ 'dark-mode': post.mode === 'dark' }">
-          <div class="post-card-content" w="md:31%" h="full">
-            <div class="post-card-title">
-              {{ post.subtitle }}
-            </div>
-            <div class="post-card-excerpt">
-              {{ post.content }}
-            </div>
-          </div>
-          <div class="post-card-img" w="md:69%" h="full">
-            <img v-if="post.cover" :src="post.cover[0]" :alt="post.cover[0]">
-          </div>
-        <!-- <img v-if="post.cover" :src="post.cover[1]" :alt="post.cover[1]" /> -->
-        </div>
-      </RouterLink>
-    </div>
+    <OceanArticleList />
     <!-- <OceanusFeatureSection /> -->
     <RouterView />
   </Layout>
