@@ -7,7 +7,10 @@ export namespace StarterTheme {
 
 export interface ThemeConfig extends DefaultTheme.Config {
   header: Partial<{
-    favicon: string | boolean
+    favicon: string | boolean | {
+      light: string
+      dark: string
+    }
     title: string
     nav: NavItem[]
   }>

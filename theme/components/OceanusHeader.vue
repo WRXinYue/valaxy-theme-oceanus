@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavItem, SubNarItem } from '../types'
-import { useSiteConfig } from 'valaxy'
+import { useAppStore, useSiteConfig } from 'valaxy'
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useThemeConfig } from '../composables'
@@ -8,13 +8,24 @@ import { useThemeConfig } from '../composables'
 const themeConfig = useThemeConfig()
 const siteConfig = useSiteConfig()
 const route = useRoute()
+const appStore = useAppStore()
 
 const { favicon, nav, title } = themeConfig.value.header
 
 const currentNavItem = ref<NavItem>()
 const currentSubNav = ref<SubNarItem[]>()
 
-const navFavicon = computed(() => favicon === true ? siteConfig.value.favicon : favicon)
+const navFavicon = computed(() => {
+  if (typeof favicon === 'boolean')
+    return favicon === true ? siteConfig.value.favicon : favicon
+  else if (typeof favicon === 'string')
+    return favicon
+  else if (typeof favicon === 'object')
+    return appStore.isDark ? favicon.dark : favicon.light
+
+  console.error('Invalid favicon type, check ThemeConfig.header.favicon config')
+  return ''
+})
 const activeParentLink = computed(() => {
   const pathSegments = route.path.split('/').filter(Boolean)
   if (pathSegments.length > 1) {
