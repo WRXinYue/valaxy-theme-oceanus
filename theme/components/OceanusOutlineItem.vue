@@ -18,7 +18,7 @@ const { locale } = useI18n()
         {{ title }}
       </RouterLink>
       <template v-if="children?.length">
-        <SakuraOutlineItem :headers="children" :on-click="onClick" />
+        <OceanusOutlineItem :headers="children" :on-click="onClick" />
       </template>
     </li>
   </ul>
